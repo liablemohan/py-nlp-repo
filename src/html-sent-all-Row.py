@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import re
 
 # Path to your HTML file
-file_path = "/home/dell/Desktop/pdf-txt/all_pages.html"
+file_path = "/home/dell/Desktop/web-txt/all_pages.html"
 
 # Open and read the HTML file
 with open(file_path, "r", encoding="utf-8") as file:
@@ -46,7 +46,7 @@ for row in rows:
     all_texts.append("")  # Add a blank line between rows
 
 # Path for the output TXT file
-txt_output_path = "parallel_corpus_formatted.txt"
+txt_output_path = "/home/dell/Desktop/web-txt/output/parallel_corpus_formatted.txt"
 
 # Save the formatted text to a TXT file
 with open(txt_output_path, "w", encoding="utf-8") as file:
